@@ -26,9 +26,9 @@ public class IRRTest {
     @Test
     public void XIRR() {
         List<CashFlow> list =new ArrayList(){{
-            add(new CashFlow(-10000,"2018-01-01"));
-            add(new CashFlow(2750,"2018-03-01"));
-            add(new CashFlow(4250,"2018-10-30"));
+            add(new CashFlow(-10000,"2008-01-01"));
+            add(new CashFlow(2750,"2008-03-01"));
+            add(new CashFlow(4250,"2008-10-30"));
             add(new CashFlow(3250,"2009-02-15"));
             add(new CashFlow(2750,"2009-04-01"));
         }};
