@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.littlefox;
+package com.littlefox.xirr;
 
 /**
  * Indicates the algorithm failed to converge in the allotted number of

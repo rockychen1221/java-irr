@@ -1,4 +1,4 @@
-package com.littlefox;
+package com.littlefox.xirr;
 
 /**
  * Indicates that the numerical method employed encountered a zero-valued

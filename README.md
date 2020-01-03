@@ -21,6 +21,8 @@ XIRR与IRR都是可以反映一组现金流的内部收益率的，但两者还�
 引入牛顿算法并简单封装
 https://github.com/RayDeCampo/java-xirr
 
+加入gurss 、猜测值
+
 ## 测试数据全部来源于Microsoft官方
 
 [Office IRR](https://support.office.com/zh-cn/article/IRR-%E5%87%BD%E6%95%B0-64925eaa-9988-495b-b290-3ad0c163c1bc)

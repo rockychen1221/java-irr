@@ -1,4 +1,4 @@
-package com.littlefox;
+package com.littlefox.xirr;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -72,8 +72,8 @@ public class Xirr {
      * @throws IllegalArgumentException if all the transactions negative (deposits)
      * @throws IllegalArgumentException if all the transactions non-negative (withdrawals)
      */
-    public Xirr(double days,Transaction... tx) {
-        this(Arrays.asList(tx),days);
+    public Xirr(double days, double guess, Transaction... tx) {
+        this(Arrays.asList(tx), days, guess);
     }
 
     /**
@@ -84,11 +84,11 @@ public class Xirr {
      * @throws IllegalArgumentException if all the transactions negative (deposits)
      * @throws IllegalArgumentException if all the transactions non-negative (withdrawals)
      */
-    public Xirr(Collection<Transaction> txs,double days) {
-        this(txs, null, days, null);
+    public Xirr(Collection<Transaction> txs, double days, double guess) {
+        this(txs, null, days, guess);
     }
 
-    private Xirr(Collection<Transaction> txs, NewtonRaphson.Builder builder,double days, Double guess) {
+    private Xirr(Collection<Transaction> txs, NewtonRaphson.Builder builder, double days, Double guess) {
         if (txs.size() < 2) {
             throw new IllegalArgumentException(
                 "Must have at least two transactions");

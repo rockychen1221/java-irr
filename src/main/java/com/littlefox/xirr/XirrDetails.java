@@ -1,4 +1,4 @@
-package com.littlefox;
+package com.littlefox.xirr;
 
 import java.time.LocalDate;
 import java.util.stream.Collector;
